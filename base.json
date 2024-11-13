@@ -47,8 +47,15 @@
         "contenido": [
             {
                 "id": "69",
-                "url": ".\/proyectos\/Helader__a_el_Pepo\/content_6731a319f360c1.84635981.png",
-                "tipo": "Imagen"
+                "url": ".\/proyectos\/Helader__a_el_Pepo\/content_6731a319f360c1.84635981.mp4",
+                "tipo": "Video"
+            }
+        ],
+        "comentarios": [
+            {
+                "id": "7",
+                "comentario": "aaaaa",
+                "puntos": "3"
             }
         ]
     },
@@ -67,6 +74,55 @@
                 "tipo": "Video"
             }
         ]
+    },
+ 
+    {
+        "id": "42",
+        "nombre": "HTML-GRID",
+        "creadores": "Luciano Barbini",
+        "mostrarcreadores": "1",
+        "descripcion": "Crea tu p\u00e1gina web de forma r\u00e1pida y sencilla. Con nuestras herramientas intuitivas, dise\u00f1a y personaliza sin necesidad de experiencia. \u00a1Haz realidad tu sitio en minutos!",
+        "codigoqr": ".\/proyectos\/HTML-GRID\/qr_673435ecd40ef9.48460548.png",
+        "curso": "7\u00b0 2\u00b0",
+        "contenido": [
+            {
+                "id": "76",
+                "url": ".\/proyectos\/HTML-GRID\/content_673435ee3ffc21.50484030.mp4",
+                "tipo": "Video"
+            }
+        ]
+    },
+    {
+        "id": "43",
+        "nombre": "Nuki Booky",
+        "creadores": "Luciano Barbini",
+        "mostrarcreadores": "1",
+        "descripcion": "Cuida de tu propia mascota virtual: dale de comer, juega y toca m\u00fasica para verla feliz. Observa su crecimiento y acomp\u00e1\u00f1ala en divertidas actividades cada d\u00eda.",
+        "codigoqr": ".\/proyectos\/Nuki_Booky\/qr_67343760dbdfa0.50234436.png",
+        "curso": "7\u00b0 2\u00b0",
+        "contenido": [
+            {
+                "id": "77",
+                "url": ".\/proyectos\/Nuki_Booky\/content_673437623e3260.68588977.mp4",
+                "tipo": "Video"
+            }
+        ]
+    },
+
+    {
+        "id": "46",
+        "nombre": "Reproductor de musica",
+        "creadores": "luciano Barbini",
+        "mostrarcreadores": "1",
+        "descripcion": "Descubre y disfruta de una playlist \u00fanica en nuestra web. Con un solo clic, sum\u00e9rgete en una experiencia musical sin interrupciones y explora canciones seleccionadas especialmente para ti",
+        "codigoqr": ".\/proyectos\/Reproductor_de_musica\/qr_673506de8bbaf4.70107050.png",
+        "curso": "7\u00b0 2\u00b0",
+        "contenido": [
+            {
+                "id": "80",
+                "url": ".\/proyectos\/Reproductor_de_musica\/content_673506dff3aeb4.02417210.mp4",
+                "tipo": "Video"
+            }
+        ]
     }
-  
 ]
