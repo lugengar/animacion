@@ -1,0 +1,72 @@
+[
+    {
+        "id": "34",
+        "nombre": "Podium",
+        "creadores": "Enzo Achucarro, Luciano Barbini, Damian Torres, Jhomar Mendieta",
+        "mostrarcreadores": "1",
+        "descripcion": "Tienda online que ofrece una variedad de productos deportivos como pelotas, raquetas y m\u00e1s. Permite comprar, consultar descripciones y elegir entre m\u00faltiples opciones para cada deporte.",
+        "codigoqr": ".\/proyectos\/Podium\/qr_6731a0f138b841.46626036.png",
+        "curso": "7\u00b0 2\u00b0",
+        "contenido": [
+            {
+                "id": "66",
+                "url": ".\/proyectos\/Podium\/content_6731a0f28463e4.09520810.mp4",
+                "tipo": "Video"
+            }
+        ]
+    },
+    {
+        "id": "35",
+        "nombre": "TAMI",
+        "creadores": "Enzo Achucarro, Luciano Barbini, Casandra Cadiz",
+        "mostrarcreadores": "1",
+        "descripcion": "Aplicaci\u00f3n de agenda para peluquer\u00edas y salones. Permite gestionar turnos, ver la agenda diaria o semanal y enviar recordatorios autom\u00e1ticos, optimizando la organizaci\u00f3n del negocio.",
+        "codigoqr": ".\/proyectos\/TAMI\/qr_6731a1d0d930a1.31405631.png",
+        "curso": "7\u00b0 2\u00b0",
+        "contenido": [
+            {
+                "id": "67",
+                "url": ".\/proyectos\/TAMI\/content_6731a1d2383781.93675494.mp4",
+                "tipo": "Video"
+            },
+            {
+                "id": "68",
+                "url": ".\/proyectos\/TAMI\/content_6731a1d23c4849.62133223.png",
+                "tipo": "Imagen"
+            }
+        ]
+    },
+    {
+        "id": "36",
+        "nombre": "Helader\u00eda el Pepo",
+        "creadores": "Luciano Barbini, Enzo Achucarro, Casandra Cadiz",
+        "mostrarcreadores": "1",
+        "descripcion": "Tienda en l\u00ednea que ofrece una variedad de helados y postres fr\u00edos, con opciones personalizadas de sabores y toppings. Realiza pedidos f\u00e1cilmente y recibe tu helado a domicilio r\u00e1pidamente.",
+        "codigoqr": ".\/proyectos\/Helader__a_el_Pepo\/qr_6731a3189bb7e3.04508503.png",
+        "curso": "7\u00b0 2\u00b0",
+        "contenido": [
+            {
+                "id": "69",
+                "url": ".\/proyectos\/Helader__a_el_Pepo\/content_6731a319f360c1.84635981.png",
+                "tipo": "Imagen"
+            }
+        ]
+    },
+    {
+        "id": "38",
+        "nombre": "Gesti\u00f3n de inventario",
+        "creadores": "Luciano Barbini, \u00c1ngeles Linares, Dami\u00e1n Torres, Mat\u00edas Desanto, Mateo Cerezetto, Tomas S\u00e1nchez",
+        "mostrarcreadores": "1",
+        "descripcion": "Plataforma en l\u00ednea para solicitar herramientas y materiales de un pa\u00f1ol escolar. Permite ver disponibilidad, realizar pedidos y gestionar entregas de manera r\u00e1pida y eficiente.",
+        "codigoqr": ".\/proyectos\/Gesti__n_de_inventario\/qr_6732d2adc30e76.33348073.png",
+        "curso": "7\u00b0 2\u00b0",
+        "contenido": [
+            {
+                "id": "71",
+                "url": ".\/proyectos\/Gesti__n_de_inventario\/content_6732d2af37b419.97614987.mp4",
+                "tipo": "Video"
+            }
+        ]
+    }
+  
+]
