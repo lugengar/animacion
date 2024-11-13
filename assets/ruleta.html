@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="../estilos/logos.css">
+<div class="contenedor-pagina3 fondo" >
+    <div class="titulo3">
+        <canvas id="wheelCanvas" width="400" height="400" style="transform: scale(30%);"></canvas>
+        <div class="cono3" style="transform: scale(30%);"></div>
+        <div id="winner"></div>
+    </div>
+</div>
+   
+<style>
+    #winner{
+        display: none;
+    }
+</style>
+<script>
+    const canvas = document.getElementById("wheelCanvas");
+    const ctx = canvas.getContext("2d");
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const radius = centerX;
+    let options = [];
+    let currentAngle = 0;
+    let isSpinning = false;
+
+    function addOption(name) {
+        options.push({ name, color: options.length % 2 === 0 ? 'rgb(84, 169, 255)' : 'rgb(255, 159, 242)' });
+        drawWheel();
+    }
+   
+    function drawWheel() {
+            const sliceAngle = 2 * Math.PI / options.length;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            options.forEach((option, i) => {
+                const startAngle = currentAngle + i * sliceAngle;
+                const endAngle = startAngle + sliceAngle;
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+                ctx.fillStyle = option.color;
+                ctx.fill();
+                ctx.save();
+                ctx.translate(centerX, centerY);
+                ctx.rotate(startAngle + sliceAngle / 2);
+                ctx.textAlign = "right";
+                ctx.fillStyle = "#FFFFFF";
+                ctx.font = "bold 16px sans-serif";
+                ctx.fillText(option.name, radius - 20, 10);
+                ctx.restore();
+            });
+        
+    }
+
+    function spinWheel() {
+      
+            if (isSpinning) return;
+            isSpinning = true;
+            let spinAngle = Math.random() * 3000 + 2000;
+            const spin = setInterval(() => {
+                currentAngle += (spinAngle / 30);
+                drawWheel();
+                spinAngle *= 0.95;
+                if (spinAngle < 0.1) {
+                    clearInterval(spin);
+                    isSpinning = false;
+                    determineWinner();
+                }
+            }, 30);
+        
+    }
+function determineWinner() {
+    const winnerIndex = Math.floor((options.length - currentAngle / (2 * Math.PI) % 1 * options.length) % options.length);
+    const winnerName = options[winnerIndex].name;
+    parent.postMessage({ action: "winner", winner: winnerName }, "*");
+    setTimeout(() => { 
+        options.splice(winnerIndex, 1);
+    },1000)
+    drawWheel();
+}
+
+
+    window.addEventListener("message", (event) => {
+        const { action, option } = event.data;
+        if (action === "addOption" && option) {
+            addOption(option);
+        } else if (action === "spinWheel") {
+            spinWheel();
+        }
+    });
+</script>
